@@ -1,4 +1,6 @@
+name: Build app and deploy to github
 language: node_js
+on: [push]
 node_js:
   - lts/*
 install:
