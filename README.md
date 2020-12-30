@@ -1,16 +1,27 @@
-### Hi there 👋
-
-<!--
-**webwangshuai/webwangshuai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+home: true
+heroText: wangshuai的个人空间
+tagline: 锲而不舍，金石可镂
+# heroImage: /hero.png
+# heroImageStyle: {
+#   maxWidth: '600px',
+#   width: '100%',
+#   display: block,
+#   margin: '9rem auto 2rem',
+#   background: '#fff',
+#   borderRadius: '1rem',
+# }
+bgImageStyle: {
+  height: '450px'
+}
+isShowTitleInHome: false
+actionText: Guide
+actionLink: /views/other/guide
+features:
+- title: Yesterday
+  details: 开发一款看着开心、写着顺手的 vuepress 博客主题
+- title: Today
+  details: 希望帮助更多的人花更多的时间在内容创作上，而不是博客搭建上
+- title: Tomorrow
+  details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
+---
