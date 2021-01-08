@@ -36,11 +36,6 @@ module.exports = {
         icon: "reco-message",
         items: [
           {
-            text: "other",
-            link: "/docs/theme-reco/",
-            icon: "reco-juejin",
-          },
-          {
             text: "算法",
             link: "/docs/leetcode/",
             icon: "reco-document"
