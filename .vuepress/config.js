@@ -2,6 +2,11 @@ module.exports = {
   title: "wangshuai",
   description: "homepage",
   dest: "public",
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   head: [
     [
       "link",
