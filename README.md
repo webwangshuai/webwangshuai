@@ -2,7 +2,7 @@
 home: true
 heroText: wangshuai的个人空间
 tagline: 锲而不舍，金石可镂
-# heroImage: /hero.png
+# heroImage: /avatar.png
 # heroImageStyle: {
 #   maxWidth: '600px',
 #   width: '100%',
@@ -11,6 +11,7 @@ tagline: 锲而不舍，金石可镂
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
+# bgImage: '/bg01.jpg'
 bgImageStyle: {
   height: '450px'
 }

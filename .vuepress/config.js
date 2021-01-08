@@ -32,57 +32,57 @@ module.exports = {
         icon: "reco-date",
       },
       {
-        text: "Docs",
+        text: "文档",
         icon: "reco-message",
         items: [
           {
-            text: "vuepress-reco",
+            text: "other",
             link: "/docs/theme-reco/",
+            icon: "reco-juejin",
           },
-        ],
+          {
+            text: "算法",
+            link: "/docs/leetcode/",
+            icon: "reco-document"
+          },
+          {
+            text: "vue",
+            link: "/docs/vue/",
+            icon: "reco-document"
+          }
+        ]
       },
       {
-        text: "Contact",
+        text: "关于",
         icon: "reco-message",
         items: [
           {
-            text: "GitHub",
-            link: "https://github.com/recoluan",
-            icon: "reco-github",
+            text: "掘金",
+            link: "https://juejin.cn/user/3562073406318712",
+            icon: "reco-juejin",
           },
         ],
       },
     ],
     sidebar: {
       "/docs/theme-reco/": ["", "theme", "plugin", "api"],
+      "/docs/leetcode/": ["", "1", "7", "9", "13"],
+      "/docs/vue/": ["", "1", "2", "3"],
     },
     type: "blog",
     blogConfig: {
       category: {
         location: 2,
-        text: "Category",
+        text: "分类",
       },
       tag: {
         location: 3,
-        text: "Tag",
+        text: "标签",
       },
     },
     friendLink: [
-      {
-        title: "午后南杂",
-        desc: "Enjoy when you can, and endure when you must.",
-        email: "1156743527@qq.com",
-        link: "https://www.recoluan.com",
-      },
-      {
-        title: "vuepress-theme-reco",
-        desc: "A simple and beautiful vuepress Blog & Doc theme.",
-        avatar:
-          "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: "https://vuepress-theme-reco.recoluan.com",
-      },
     ],
-    logo: "/logo.png",
+    logo: "/avatar.png",
     search: true,
     searchMaxSuggestions: 10,
     lastUpdated: "Last Updated",
@@ -94,4 +94,26 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
+  plugins: [
+    [
+      "@vuepress-reco/vuepress-plugin-bgm-player",
+      {
+        audios: [
+          // 网络文件示例
+          {
+            name: '강남역 4번 출구',
+            artist: 'Plastic / Fallin` Dild',
+            url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+            cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+          },
+          {
+            name: '用胳膊当枕头',
+            artist: '최낙타',
+            url: 'https://assets.smallsunnyfox.com/music/3.mp3',
+            cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+          }
+        ]  
+      }
+    ]
+  ]
 };
