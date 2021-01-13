@@ -1,27 +1,22 @@
+const path = require('path')
+const { glob } = require('glob')
+
+console.log('entryFiles-leetcode', createArr('leetcode'))
+console.log('entryFiles-vue', createArr('vue'))
 module.exports = {
   title: "wangshuai",
   description: "homepage",
-  dest: "public",
+  dest: "dist",
   locales: {
     '/': {
       lang: 'zh-CN'
     }
   },
   head: [
-    [
-      "link",
-      {
-        rel: "icon",
-        href: "/favicon.ico",
-      },
-    ],
-    [
-      "meta",
-      {
-        name: "viewport",
-        content: "width=device-width,initial-scale=1,user-scalable=no",
-      },
-    ],
+    [ "link", { rel: "icon", href: "/favicon.ico" }],
+    [ "meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
+    [ "meta", { name: "keywords", content: "webwangshuai,王帅,王帅的个人主页" }],
+    [ "meta", { name: "description", content: "webwangshuai,王帅,王帅的个人主页" }]
   ],
   theme: "reco",
   themeConfig: {
@@ -66,8 +61,8 @@ module.exports = {
     ],
     sidebar: {
       "/docs/theme-reco/": ["", "theme", "plugin", "api"],
-      "/docs/leetcode/": ["", "1", "7", "9", "13"],
-      "/docs/vue/": ["", "1", "2", "3"],
+      "/docs/leetcode/": createArr('leetcode'),
+      "/docs/vue/": createArr('vue'),
     },
     type: "blog",
     blogConfig: {
@@ -117,3 +112,14 @@ module.exports = {
     ]
   ]
 };
+
+
+function createArr (dirnames) {
+  const entryFiles = glob.sync(path.join(__dirname, `../docs/${dirnames}/**/*`))
+  let newArr = entryFiles.map(item => {
+    let reg = /(\d+)\.md$/
+    let matchs = item.match(reg)
+    return matchs && matchs[1] || ''
+  }).sort((a, b) => a-b)
+  return newArr
+}
