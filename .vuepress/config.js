@@ -5,7 +5,7 @@ console.log('entryFiles-leetcode', createArr('leetcode'))
 console.log('entryFiles-vue', createArr('vue'))
 module.exports = {
   title: "wangshuai",
-  description: "homepage",
+  description: "webwangshuai、王帅的个人主页",
   dest: "dist",
   locales: {
     '/': {
