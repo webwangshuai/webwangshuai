@@ -15,8 +15,7 @@ module.exports = {
   head: [
     [ "link", { rel: "icon", href: "/favicon.ico" }],
     [ "meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
-    [ "meta", { name: "keywords", content: "webwangshuai,王帅,王帅的个人主页" }],
-    [ "meta", { name: "description", content: "webwangshuai,王帅,王帅的个人主页" }]
+    [ "meta", { name: "keywords", content: "webwangshuai,王帅,王帅的个人主页" }]
   ],
   theme: "reco",
   themeConfig: {
