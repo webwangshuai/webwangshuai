@@ -25,11 +25,11 @@ module.exports = {
         link: "/",
         icon: "reco-home",
       },
-      {
-        text: "时间轴",
-        link: "/timeline/",
-        icon: "reco-date",
-      },
+      // {
+      //   text: "时间轴",
+      //   link: "/timeline/",
+      //   icon: "reco-date",
+      // },
       {
         text: "文档",
         icon: "reco-message",
@@ -42,6 +42,16 @@ module.exports = {
           {
             text: "vue",
             link: "/docs/vue/",
+            icon: "reco-document"
+          },
+          {
+            text: "react",
+            link: "/docs/react/",
+            icon: "reco-document"
+          },
+          {
+            text: "node",
+            link: "/docs/node/",
             icon: "reco-document"
           }
         ]
@@ -62,6 +72,8 @@ module.exports = {
       "/docs/theme-reco/": ["", "theme", "plugin", "api"],
       "/docs/leetcode/": createArr('leetcode'),
       "/docs/vue/": createArr('vue'),
+      "/docs/react/": createArr('react'),
+      "/docs/node/": createArr('node')
     },
     type: "blog",
     blogConfig: {
@@ -88,28 +100,28 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
-  plugins: [
-    [
-      "@vuepress-reco/vuepress-plugin-bgm-player",
-      {
-        audios: [
-          // 网络文件示例
-          {
-            name: '강남역 4번 출구',
-            artist: 'Plastic / Fallin` Dild',
-            url: 'https://assets.smallsunnyfox.com/music/2.mp3',
-            cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
-          },
-          {
-            name: '用胳膊当枕头',
-            artist: '최낙타',
-            url: 'https://assets.smallsunnyfox.com/music/3.mp3',
-            cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
-          }
-        ]  
-      }
-    ]
-  ]
+  // plugins: [
+  //   [
+  //     "@vuepress-reco/vuepress-plugin-bgm-player",
+  //     {
+  //       audios: [
+  //         // 网络文件示例
+  //         {
+  //           name: '강남역 4번 출구',
+  //           artist: 'Plastic / Fallin` Dild',
+  //           url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+  //           cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+  //         },
+  //         {
+  //           name: '用胳膊当枕头',
+  //           artist: '최낙타',
+  //           url: 'https://assets.smallsunnyfox.com/music/3.mp3',
+  //           cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+  //         }
+  //       ]  
+  //     }
+  //   ]
+  // ]
 };
 
 
