@@ -25,11 +25,11 @@ module.exports = {
         link: "/",
         icon: "reco-home",
       },
-      // {
-      //   text: "时间轴",
-      //   link: "/timeline/",
-      //   icon: "reco-date",
-      // },
+      {
+        text: "时间轴",
+        link: "/timeline/",
+        icon: "reco-date",
+      },
       {
         text: "文档",
         icon: "reco-message",
@@ -91,11 +91,11 @@ module.exports = {
     logo: "/avatar.png",
     search: true,
     searchMaxSuggestions: 10,
-    lastUpdated: "Last Updated",
+    // lastUpdated: "Last Updated",
     author: "wangshuai",
     authorAvatar: "/avatar.png",
     record: "wangshuai",
-    startYear: "2017",
+    startYear: "2020",
   },
   markdown: {
     lineNumbers: true,
