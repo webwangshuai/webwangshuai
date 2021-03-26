@@ -1,8 +1,6 @@
 const path = require('path')
 const { glob } = require('glob')
 
-console.log('entryFiles-leetcode', createArr('leetcode'))
-console.log('entryFiles-vue', createArr('vue'))
 module.exports = {
   title: "wangshuai",
   description: "webwangshuai、王帅的个人主页",
