@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: wangshuai的个人空间
+heroText: shuai的个人空间
 tagline: 锲而不舍，金石可镂
 # heroImage: /avatar.png
 # heroImageStyle: {
