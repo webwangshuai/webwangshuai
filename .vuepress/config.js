@@ -51,6 +51,16 @@ module.exports = {
             text: "node",
             link: "/docs/node/",
             icon: "reco-document"
+          },
+          {
+            text: "webpack",
+            link: "/docs/webpack/",
+            icon: "reco-document"
+          },
+          {
+            text: "reactNative",
+            link: "/docs/reactNative/",
+            icon: "reco-document"
           }
         ]
       },
@@ -71,7 +81,9 @@ module.exports = {
       "/docs/leetcode/": createArr('leetcode'),
       "/docs/vue/": createArr('vue'),
       "/docs/react/": createArr('react'),
-      "/docs/node/": createArr('node')
+      "/docs/node/": createArr('node'),
+      "/docs/webpack/": createArr('webpack'),
+      "/docs/reactNative/": createArr('reactNative'),
     },
     type: "blog",
     blogConfig: {
