@@ -58,8 +58,8 @@ module.exports = {
             icon: "reco-document"
           },
           {
-            text: "reactNative",
-            link: "/docs/reactNative/",
+            text: "harmoneyOS",
+            link: "/docs/harmoneyOS/",
             icon: "reco-document"
           }
         ]
@@ -78,12 +78,12 @@ module.exports = {
     ],
     sidebar: {
       "/docs/theme-reco/": ["", "theme", "plugin", "api"],
+      "/docs/harmoneyOS/": createArr('harmoneyOS'),
       "/docs/leetcode/": createArr('leetcode'),
       "/docs/vue/": createArr('vue'),
       "/docs/react/": createArr('react'),
       "/docs/node/": createArr('node'),
       "/docs/webpack/": createArr('webpack'),
-      "/docs/reactNative/": createArr('reactNative'),
     },
     type: "blog",
     blogConfig: {
