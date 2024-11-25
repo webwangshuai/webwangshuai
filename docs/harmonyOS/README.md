@@ -1,5 +1,5 @@
 ---
-title: harmoneyOS
+title: harmonyOS
 date: 2024-01-05
 ---
 

@@ -58,8 +58,8 @@ module.exports = {
             icon: "reco-document"
           },
           {
-            text: "harmoneyOS",
-            link: "/docs/harmoneyOS/",
+            text: "harmonyOS",
+            link: "/docs/harmonyOS/",
             icon: "reco-document"
           }
         ]
@@ -78,7 +78,7 @@ module.exports = {
     ],
     sidebar: {
       "/docs/theme-reco/": ["", "theme", "plugin", "api"],
-      "/docs/harmoneyOS/": createArr('harmoneyOS'),
+      "/docs/harmonyOS/": createArr('harmonyOS'),
       "/docs/leetcode/": createArr('leetcode'),
       "/docs/vue/": createArr('vue'),
       "/docs/react/": createArr('react'),
